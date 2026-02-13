@@ -44,6 +44,7 @@ This repository curates high-signal resources on Coding Agent technology, emphas
 | 38 | [AdaL](https://www.sylph.ai/) | SylphAI | AdaL CLI coding agent by SylphAI. | ✓ |  |  |  | Docs-only: https://github.com/SylphAI-Inc/adal-cli |  |
 | 39 | [Aider](https://aider.chat/) | Aider-AI | AI pair programming in your terminal. | ✓ |  |  |  | https://github.com/Aider-AI/aider | https://aider.chat/ |
 | 40 | [Devin](https://cognition.ai/introducing-devin) | Cognition | AI software engineer by Cognition. |  |  |  | ✓ | Closed-source | https://cognition.ai/introducing-devin |
+| 41 | [Deep Agents CLI](https://docs.langchain.com/oss/python/deepagents/cli/overview) | LangChain | CLI for deep agent workflows and developer task automation. | ✓ |  |  |  | Docs-only: https://docs.langchain.com/oss/python/deepagents/cli/overview |  |
 
 Legend: ✓ indicates official availability. App refers to a standalone web/desktop/mobile app (non-IDE).
 
@@ -66,15 +67,33 @@ Legend: ✓ indicates official availability. App refers to a standalone web/desk
 - 2026-01-20 - [Cisco](https://openai.com/index/cisco/) - Enterprise-scale Codex deployment. Key technical takeaways: enterprise-scale workflows and collaboration; accelerates large codebase iteration; focuses on complex development tasks.
 - 2026-01-23 - [Unrolling the Codex agent loop](https://openai.com/index/unrolling-the-codex-agent-loop/) - Deep dive into the Codex harness and tool loop. Key technical takeaways: harness orchestrates prompt -> inference -> tool calls; tool-call iterations with context window management; prompt built from roles/tools/inputs via the Responses API.
 - 2026-01-29 - [Inside our in-house data agent](https://openai.com/index/inside-our-in-house-data-agent/) - Internal agent architecture writeup. Key technical takeaways: internal data agent for employee questions; multi-step agentic workflows beyond single-turn chat; integrates with internal data sources.
+- 2026-02-02 - [Introducing the Codex app](https://openai.com/zh-Hans-CN/index/introducing-the-codex-app/) - Product launch for a dedicated Codex app experience. Key technical takeaways: app-level workflow for coding tasks with Codex and broader access pattern across devices.
+- 2026-02-05 - [Introducing GPT-5.3-Codex](https://openai.com/zh-Hans-CN/index/introducing-gpt-5-3-codex/) - Model update focused on coding quality and agent performance. Key technical takeaways: new Codex model generation for stronger real-world coding and agentic execution.
+- 2026-02-05 - [GPT-5.3-Codex system card](https://openai.com/zh-Hans-CN/index/gpt-5-3-codex-system-card/) - Safety/system-card documentation for GPT-5.3-Codex. Key technical takeaways: evaluation and mitigation details for the GPT-5.3-Codex deployment.
+
+### Anthropic Engineering highlights (chronological)
+- 2025-11-04 - [Code execution with MCP: Building more efficient agents](https://www.anthropic.com/engineering/code-execution-with-mcp) - Engineering walkthrough of code execution via MCP. Key technical takeaways: shifts execution from shell wrappers to typed MCP tool calls; simplifies orchestration and reduces coordination overhead in agent loops.
+- 2025-11-24 - [Introducing advanced tool use on the Claude Developer Platform](https://www.anthropic.com/engineering/advanced-tool-use) - Production lessons for higher-fidelity tool invocation. Key technical takeaways: tool-use upgrades improve multi-step execution reliability and expand structured interaction patterns.
+- 2025-11-26 - [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) - Harness design for multi-hour agent runs. Key technical takeaways: harness architecture, retries, and state management matter as much as model quality for long-horizon coding tasks.
+- 2026-01-09 - [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) - Practical guidance for measuring agent quality. Key technical takeaways: evaluator design, task realism, and variance control are critical for trustworthy agent benchmarks.
+- 2026-02-05 - [Building a C compiler with a team of parallel Claudes](https://www.anthropic.com/engineering/building-c-compiler) - Experiment on parallel-agent software construction. Key technical takeaways: parallel specialized agents can accelerate compiler implementation while keeping integration/test loops explicit.
 
 ### Other official deep dives
 - [Codex Open Source](https://developers.openai.com/codex/open-source) - Official index of open-source Codex components (CLI, SDK, app server, skills) and collaboration entry points. Key technical takeaways: component map plus extension points for agent building.
 - [Building effective agents](https://www.anthropic.com/research/building-effective-agents) - Anthropic research on agent/workflow distinctions, composable patterns, and when to use agents. Key technical takeaways: decision boundary between workflows vs agents and reusable pattern library.
+- [Designing technical evaluations to be AI-resistant](https://www.anthropic.com/engineering/evaluating-technical-candidates-ai-resistance) - Anthropic engineering guidance on interview/evaluation design in the agent era. Key technical takeaways: anti-leakage and anti-outsourcing evaluation patterns for measuring true human engineering skill.
 - [Claude Code Sub-Agents](https://docs.claude.com/zh-CN/docs/claude-code/sub-agents) - Official description of sub-agent concepts, configuration scopes, and delegation triggers. Key technical takeaways: subagent definitions, scope boundaries, and delegation rules.
+- [Fast mode (research preview)](https://platform.claude.com/docs/en/build-with-claude/fast-mode) - Official Claude API documentation for Fast mode. Key technical takeaways: lower-latency execution mode, tradeoffs versus standard quality profiles, and integration guidance for agent workflows.
 - [Extending Claude's capabilities with skills and MCP servers](https://claude.com/blog/extending-claude-capabilities-with-skills-mcp-servers) - Explains the separation of tool connectivity (MCP) and workflow logic (skills). Key technical takeaways: MCP handles connectivity while Skills encode workflow logic and orchestration.
 - [Cowork: Claude Code for the rest of your work](https://claude.com/blog/cowork-research-preview) - Research preview describing file-scoped autonomy, planning, and safety boundaries for agentic work. Key technical takeaways: file-scoped autonomy and plan-and-execute loops with safety constraints.
 - [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) - Official recipes and patterns for tool use, sub-agents, and evaluation loops (beyond API docs). Key technical takeaways: practical tool-use patterns, subagent recipes, and evaluation scaffolds.
+- [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) - Official Anthropic repository of plugins for Claude Cowork knowledge-work workflows. Key technical takeaways: reusable plugin patterns and integration surfaces for practical non-trivial workflows.
+- [claude-agent-sdk-demos](https://github.com/anthropics/claude-agent-sdk-demos) - Official Anthropic demos for the Claude Agent SDK. Key technical takeaways: runnable examples for SDK-based agent orchestration and tooling patterns.
+- [Agent Trace: Capturing the Context Graph of Code](https://cognition.ai/blog/agent-trace) - Cognition proposal for an open tracing format for coding agents. Key technical takeaways: context-graph traces for model/tool/file actions and a shared observability/evaluation substrate.
+- [Agent Trace (spec)](https://agent-trace.dev/) - Specification site for the Agent Trace format. Key technical takeaways: interoperable schema for recording and analyzing agent execution traces.
+- [Devin's MCP Marketplace](https://cognition.ai/blog/devin-mcp-marketplace) - Cognition post on MCP ecosystem integration in Devin. Key technical takeaways: curated server discovery, one-click MCP deployment, and governance-oriented integration workflows.
 - [Kimi K2.5: Visual Agentic Intelligence](https://www.kimi.com/blog/kimi-k2-5.html) - Moonshot AI technical blog describing K2.5 and Agent Swarm. Key technical takeaways: self-directed swarm up to 100 sub-agents and 1,500 tool calls; K2.5 availability via Kimi.com/App/API/Kimi Code; Agent Swarm beta on Kimi.com.
+- [Qwen3-Coder-Next Technical Report (PDF)](https://github.com/QwenLM/Qwen3-Coder/blob/main/qwen3_coder_next_tech_report.pdf) - Official Qwen3-Coder-Next technical report from QwenLM. Key technical takeaways: consolidated reference for model design, training/evaluation setup, and coding-agent capabilities.
 
 ## Claude blog highlights (Claude Code / Agents / Skills / MCP)
 - 2025-06-18 - [Remote MCP support in Claude Code](https://claude.com/blog/claude-code-remote-mcp) - Remote MCP server support and secure auth flow. Key technical takeaways: remote MCP connectivity and secure authentication for tooling.
@@ -105,6 +124,7 @@ Legend: ✓ indicates official availability. App refers to a standalone web/desk
 - 2026-01-29 - [A complete guide to building skills for Claude](https://claude.com/blog/complete-guide-to-building-skills-for-claude) - End-to-end guidance for skill design, testing, and distribution (including MCP + Skills). Key technical takeaways: full skill lifecycle (design -> test -> distribute) and MCP + Skills composition.
 - 2026-01-29 - [Building Skills for Claude Code](https://claude.com/blog/building-skills-for-claude-code) - Skill structure and best practices in Claude Code. Key technical takeaways: skill structure and operational best practices for Claude Code.
 - 2026-01-29 - [Understand Claude Code's impact with contribution metrics](https://claude.com/blog/contribution-metrics) - Introduces contribution metrics for PR/code impact measurement. Key technical takeaways: contribution metrics for agentic code impact and PR attribution.
+- 2026-02-05 - [Claude Opus 4.6](https://www.anthropic.com/news/claude-opus-4-6) - Model release update from Anthropic. Key technical takeaways: newest Opus-series capability update relevant to coding quality and advanced agent workflows.
 
 ## Founder interviews and design talks (Cursor / Codex / Gemini CLI)
 - [OpenAI Podcast - Episode 6: The future of coding with AI](https://shows.acast.com/openai-podcast/episodes/episode-6-the-future-of-coding-with-ai) - Greg Brockman and Codex lead Thibault Sottiaux on harnesses, agentic coding, and GPT-5 Codex evolution. Key technical takeaways: harness design principles, agent loop evolution, and safety constraints.
@@ -114,6 +134,7 @@ Legend: ✓ indicates official availability. App refers to a standalone web/desk
 - [The a16z Show: How Cursor Builds at the Speed of AI](https://www.iheart.com/podcast/1270-a16z-podcast-30965806/episode/michael-truell-how-cursor-builds-at-306069129/) - Constraints, editor-first strategy, and hiring philosophy. Key technical takeaways: editor-first strategy and constraints that shape agent behavior.
 - [Lenny's Podcast: The rise of Cursor](https://www.iheart.com/podcast/867-lennys-podcast-product-car-98064177/episode/the-rise-of-cursor-the-300m-273854331/) - "After code" vision, custom model strategy, and product focus. Key technical takeaways: custom model strategy and product focus for agentic IDEs.
 - [YC Startup Podcast: Cursor CEO - Going Beyond Code](https://www.iheart.com/podcast/256-y-combinator-startup-podca-30962882/episode/cursor-ceo-going-beyond-code-superintelligent-280405391/) - Fireside chat on "beyond code" trajectory and taste. Key technical takeaways: product taste and "beyond code" trajectory for agentic tools.
+- [We're All Addicted To Claude Code (Y Combinator)](https://www.youtube.com/watch?v=qwmmWzPnhog) - YC conversation on real-world Claude Code usage patterns. Key technical takeaways: high-frequency coding workflows, collaboration habits, and practical tradeoffs in agent-assisted development.
 - [Peak XV: Aman Sanger on 0-$100M in 12 Months](https://www.peakxv.com/video/cursor-co-founder-aman-sanger-on-the-journey-from-0-100m-in-12-months-the-future-of-programming/) - Origin story, shipping culture, and future of programming. Key technical takeaways: shipping culture and operational focus for scaling agentic products.
 
 ## Cursor blog (research and product)
@@ -156,12 +177,18 @@ Legend: ✓ indicates official availability. App refers to a standalone web/desk
 - [AB Method](https://github.com/ayoubben18/ab-method) - Spec-driven workflow that turns large problems into incremental missions using Claude Code subagents. Key technical takeaways: spec-driven decomposition into incremental missions with subagents.
 - [Agentic AI Systems (workflow patterns)](https://github.com/ThibautMelen/agentic-ai-systems) - Workflow and orchestration patterns with diagrams and taxonomy. Key technical takeaways: workflow taxonomy and orchestration patterns.
 - [Claude Code Handbook](https://nikiforovall.blog/claude-code-rules/) - Best practices, fundamentals, tips, and workflow guidance. Key technical takeaways: practical Claude Code workflow fundamentals and guardrails.
+- [claude-code-guide](https://github.com/Cranot/claude-code-guide) - Continuously updated Claude Code CLI guide. Key technical takeaways: broad command/workflow coverage and practical operating patterns.
 - [Claude Code Infrastructure Showcase](https://github.com/diet103/claude-code-infrastructure-showcase) - Skill auto-activation patterns using hooks and agents. Key technical takeaways: hook-driven auto-activation infrastructure.
+- [Claude Flow Skills: Complete Introduction Tutorial (Issue #821)](https://github.com/ruvnet/claude-flow/issues/821) - Community tutorial issue covering Claude Flow skill builder and flow skills usage. Key technical takeaways: setup flow for skills, builder-oriented workflow, and practical skill composition patterns.
+- [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) - Community best-practice collection for Claude Code usage. Key technical takeaways: pragmatic usage patterns and guardrails distilled from hands-on practice.
 - [Claude Code System Prompts](https://github.com/Piebald-AI/claude-code-system-prompts) - System prompt segments, tool descriptions, and subagent prompts for studying agent design. Key technical takeaways: system prompts and tool descriptions that shape agent behavior.
 - [Claude Code PM (ccpm)](https://github.com/automazeio/ccpm) - Spec-driven project management workflow using GitHub Issues and worktrees for parallel agent execution. Key technical takeaways: spec-driven PM with worktrees for parallelism.
 - [Claude Code Spec Workflow](https://github.com/Pimzino/claude-code-spec-workflow) - Structured pipelines for new features (Requirements -> Design -> Tasks -> Implementation) and bug fixes (Report -> Analyze -> Fix -> Verify). Key technical takeaways: structured pipelines for features and bug fixes.
 - [Claude CodePro](https://github.com/maxritter/claude-code-pro) - Spec-driven workflow with TDD enforcement, modular rules, and persistent memory for production-quality work. Key technical takeaways: TDD enforcement, modular rules, and persistent memory.
 - [ContextKit](https://github.com/FlineDev/ContextKit) - Context engineering and planning system to reduce micromanagement and improve first-pass quality. Key technical takeaways: context planning system to improve first-pass quality.
+- [claude-mem](https://github.com/thedotmack/claude-mem) - Claude Code plugin that captures session activity, compresses it with Claude, and injects relevant memory into future sessions. Key technical takeaways: automated memory capture/compression and cross-session context reinjection for continuity.
+- [claude-howto](https://github.com/luongnv89/claude-howto) - Visual, example-driven Claude Code guide with practical templates. Key technical takeaways: stepwise examples from basics to advanced agent workflows.
+- [oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode) - Community harness toolkit around opencode agent workflows. Key technical takeaways: harness-oriented automation patterns for improving agent execution flow.
 - [SuperClaude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) - Configuration framework with specialized commands, cognitive personas, and development methodologies. Key technical takeaways: command framework with personas and structured methods.
 - [Simone for Claude Code](https://github.com/Helmi/claude-simone) - Project management framework for Claude Code with task planning and MCP-aware workflows. Key technical takeaways: task planning with MCP-aware workflows.
 - [Field Notes From Shipping Real Code With Claude](https://diwank.space/field-notes-from-shipping-real-code-with-claude) - Practical workflow lessons on shipping production code with Claude, focusing on context control and guardrails. Key technical takeaways: context control and guardrails for production work.
@@ -221,6 +248,7 @@ Legend: ✓ indicates official availability. App refers to a standalone web/desk
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) - Shows how specialized agent-computer interfaces improve repository navigation and tool use.
 - [AgentCoder: Multi-Agent-based Code Generation with Iterative Testing and Optimisation](https://arxiv.org/abs/2312.13010) - Multi-agent generation with programmer/tester roles and feedback loops.
 - [CodeDelegator: Mitigating Context Pollution via Role Separation in Code-as-Action Agents](https://arxiv.org/abs/2601.14914) - Separates planning and implementation to reduce context pollution.
+- [Meta Context Engineering via Agentic Skill Evolution](https://arxiv.org/abs/2601.21557) - Introduces autonomous skill evolution loops to improve context engineering and downstream agent performance.
 - [MegaFlow: LLM Orchestration for Agentic AI](https://arxiv.org/pdf/2601.07526) - Distributed orchestration system for large-scale agent training and evaluation.
 - [SWE-Gym: Training Software Engineering Agents and Verifiers](https://arxiv.org/abs/2412.21139) - Training environment with real repos and executable tests.
 
@@ -256,10 +284,12 @@ Legend: ✓ indicates official availability. App refers to a standalone web/desk
 
 ## MCP ecosystem (protocols and registries)
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) - Official overview of the protocol.
+- [Augment MCP overview](https://docs.augmentcode.com/context-services/mcp/overview) - Augment documentation on MCP architecture and integration model. Key technical takeaways: MCP connectivity model in Augment context services and practical setup concepts.
 - [MCP Servers (directory)](https://mcpservers.org/) - Community directory of MCP servers.
 - [MCP Market (Chinese)](https://mcpmarket.com/zh) - Chinese MCP marketplace and listings.
 - [MCP Registry](https://mcp-registry.org/servers) - Alternative server index.
 - [MCP Serve](https://mcpserve.com/servers/) - MCP server directory.
+- [claude-code-mcp](https://github.com/steipete/claude-code-mcp) - Claude Code exposed as a one-shot MCP server for agent-in-agent workflows. Key technical takeaways: packaging Claude Code capabilities behind MCP for composable orchestration.
 
 ## MCP security and system studies
 - [MCP Safety Audit](https://arxiv.org/abs/2504.03767) - Security risks and auditing tool for MCP servers.
@@ -270,19 +300,25 @@ Legend: ✓ indicates official availability. App refers to a standalone web/desk
 
 ## Safety, privacy, and governance
 - [SoK: Prompt Injection Attacks in Agentic LLM-based Assistants](https://arxiv.org/abs/2601.17548) - Systematizes prompt-injection threat models and defenses for agentic tools.
+- [Evaluating and mitigating growing risk of zero-day jailbreaks for LLM safety safeguards](https://red.anthropic.com/2026/zero-days/) - Anthropic red-team analysis of adaptive jailbreak attacks. Key technical takeaways: zero-day attack framing, transferability concerns, and layered mitigation strategy for model and product defenses.
 - [AI Agent, AI Spy (39C3)](https://media.ccc.de/v/39c3-ai-agent-ai-spy) - Signal's Whittaker and Tiwari analyze OS-level agent integration as surveillance risk and outline mitigation principles (YouTube mirror: https://youtu.be/0ANECpNdt-4).
 
 ## Skills ecosystem (separate)
 - [Agent Skills standard](https://agentskills.io/) - Open standard for skills packaging and interoperability.
 - [skills.sh](https://skills.sh/) - Community catalog of skills.
 - [Agent Skills Index](https://agentskillsindex.com/) - Skills directory and categories.
+- [Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) - Community repository of reusable agent skills for context engineering. Key technical takeaways: practical skill modules and context-oriented prompting patterns.
+- [awesome-agent-skills](https://github.com/0xD0117/awesome-agent-skills) - Curated collection of reusable skills for coding and agent workflows. Key technical takeaways: ecosystem map of skill packs and implementation references.
+- [Claudeception](https://github.com/blader/Claudeception) - Claude Code skill for autonomous skill extraction and continuous learning. Key technical takeaways: self-improving skill loop and automatic knowledge capture from ongoing work.
 - [Context Engineering Kit](https://github.com/NeoLabHQ/context-engineering-kit) - Plugin marketplace focused on improving agent result quality across multiple coding agents.
 - [Trail of Bits Skills](https://github.com/trailofbits/skills) - Security-focused Claude Code skills for audit and vulnerability workflows.
 - [everything-claude-code](https://github.com/affaan-m/everything-claude-code) - Configuration corpus spanning agents, skills, hooks, commands, rules, and MCPs.
 
 ## Autonomous loops and workflow ecosystems
 - [open-claude-cowork](https://github.com/ComposioHQ/open-claude-cowork) - Open-source Cowork-style desktop agent with tool integrations.
+- [openwork](https://github.com/different-ai/openwork) - Open-source alternative to Claude Cowork powered by opencode. Key technical takeaways: open implementation of Cowork-style autonomous workflows.
 - [Auto-Claude](https://github.com/AndyMik90/Auto-Claude) - Autonomous multi-session coding app with parallel agent terminals, worktree isolation, self-validating QA, and memory across sessions.
+- [Continuous-Claude-v3](https://github.com/parcadei/Continuous-Claude-v3) - Context-management and orchestration framework for Claude Code with hooks and handoffs. Key technical takeaways: ledger-based state continuity and isolated context windows for long-running loops.
 - [Ralph for Claude Code](https://github.com/frankbria/ralph-claude-code) - Autonomous development loop with intelligent exit detection (Ralph Wiggum technique).
 - [ralph-orchestrator](https://github.com/mikeyobrien/ralph-orchestrator) - Expanded Ralph Wiggum orchestration system for autonomous agent runs.
 - [Ralph Playbook](https://github.com/ClaytonFarr/ralph-playbook) - Practical guide to running autonomous Ralph loops with theory and guardrails.
@@ -304,6 +340,8 @@ Legend: ✓ indicates official availability. App refers to a standalone web/desk
 - [MCP protocol evolution: SSE to Streamable HTTP](https://zhuanlan.zhihu.com/p/1940798424627802278) - Transport-layer changes and architectural implications.
 - [What is MCP and why it matters](https://zhuanlan.zhihu.com/p/29490664272) - Conceptual overview and design rationale.
 - [Zhihu series: Coding Agent topics](https://zhuanlan.zhihu.com/p/1995969277430354423) - Series entry point aggregating Coding Agent/Claude Code discussions.
+- [Are we evaluating coding agents in the wrong direction?](https://zhuanlan.zhihu.com/p/1942901892267794637) - Chinese discussion on benchmark alignment and real-task validity for coding-agent evaluation.
+- [From beginner to practical Agent Skills: MCP + Context Engineering](https://zhuanlan.zhihu.com/p/1944767646684659133) - Chinese walkthrough on combining Agent Skills with MCP and context-engineering workflows.
 - [Claude Code safety and plugin chain analysis](https://zhuanlan.zhihu.com/p/1997605529787324272) - Discussion of plugin/MCP control flow risks.
 - [Claude Code: deep experience and practice](https://zhuanlan.zhihu.com/p/1898990488740479216) - Workflow-focused experience report.
 - [Claude Code vs Gemini CLI (comparative review)](https://zhuanlan.zhihu.com/p/1950932113856659712) - Comparative evaluation of Claude Code and Gemini CLI.
