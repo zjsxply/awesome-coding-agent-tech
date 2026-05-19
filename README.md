@@ -277,6 +277,9 @@ Legend: ✓ indicates official availability. App refers to a standalone web/desk
 - [The SWE-Bench Illusion: When State-of-the-Art LLMs Remember Instead of Reason](https://www.sciencestack.ai/paper/2506.12286) - Evidence of memorization effects.
 - [Are "Solved Issues" in SWE-bench Really Solved Correctly?](https://www.sciencestack.ai/paper/2503.15223) - Patch validity analysis and overestimation risk.
 
+### Evaluation tooling
+- [agenttrace](https://github.com/luoyuctl/agenttrace) - Local-first TUI and CLI for evaluating AI coding agent sessions from trace logs; reports cost, token, latency, and health regressions for CI gates.
+
 ## Surveys and taxonomies
 - [AI Agentic Programming: A Survey of Techniques, Challenges, and Opportunities](https://arxiv.org/abs/2508.11126) - Taxonomy of agentic programming techniques and open challenges.
 - [Large Language Model-Based Agents for Software Engineering: A Survey](https://arxiv.org/abs/2409.02977) - Survey of agent methods in SE.
