@@ -315,6 +315,7 @@ Legend: ✓ indicates official availability. App refers to a standalone web/desk
 - [everything-claude-code](https://github.com/affaan-m/everything-claude-code) - Configuration corpus spanning agents, skills, hooks, commands, rules, and MCPs.
 
 ## Autonomous loops and workflow ecosystems
+- [agent-qa Coding Agent Verification Workflow](https://vostride.com/docs/agent-qa/guides/coding-agent-workflow) - Official guide to checking changes in running web/mobile apps. Key technical takeaways: narrow tests, run evidence, failure repair, and reruns; skipped or unexecuted checks do not count as passing.
 - [open-claude-cowork](https://github.com/ComposioHQ/open-claude-cowork) - Open-source Cowork-style desktop agent with tool integrations.
 - [openwork](https://github.com/different-ai/openwork) - Open-source alternative to Claude Cowork powered by opencode. Key technical takeaways: open implementation of Cowork-style autonomous workflows.
 - [Auto-Claude](https://github.com/AndyMik90/Auto-Claude) - Autonomous multi-session coding app with parallel agent terminals, worktree isolation, self-validating QA, and memory across sessions.
